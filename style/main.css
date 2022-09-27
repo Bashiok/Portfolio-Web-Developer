@@ -1,57 +1,67 @@
 /* Global Setting */
-* {
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    -ms-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-}
-
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*=========== Typography ============*/
 h1 {
-    font-size: 75px;
-    font-weight: 700;
+  font-size: 75px;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: 50px;
-    font-weight: 600;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: 400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 h5 {
-    font-size: 16px;
-    font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 h6 {
-    font-size: 15px;
-    font-weight: 400;
+  font-size: 15px;
+  font-weight: 400;
 }
+
+/* Nav Bar */
+.navbar {
+  background-color: #2b3d4f;
+  border-bottom: 12px solid rgba(255, 255, 255, 0.1);
+}
+
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.offcanvas {
+  background-color: #2b3d4f !important;
+  color: blue !important;
+  width: 300px !important;
+}/*# sourceMappingURL=main.css.map */
