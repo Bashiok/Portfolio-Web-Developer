@@ -81,20 +81,29 @@ h6 {
     border-top: 1px solid #374757;
     border-bottom: 1px solid #263340;
     font-family: 'Open Sans', sans-serif!important;
-    font-weight: 300!important;
+    font-weight: 100!important;
+    font-size: 17px!important;
 }
+
 
 .nav-link:hover {
-    color: #16c0f0!important;
+    background-color: #273445;
 }
-
+ul.navbar-nav.justify-content-end.flex-grow-1.pe-3 {
+    padding-right: 0!important;
+}
 .menu-small-icon{
-    padding: 10px 20px;
+    padding: 15px 20px 15px 30px;
 }
 
-.menu-small-icon:hover {
-    color: #16c0f0;
+.pe-3 {
+    padding-right: 0!important;
 }
+
+.offcanvas-body {
+    padding: 0!important;
+}
+
 
 
 
