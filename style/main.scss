@@ -104,6 +104,23 @@ ul.navbar-nav.justify-content-end.flex-grow-1.pe-3 {
     padding: 0!important;
 }
 
+button.navbar-toggler {
+    box-shadow: none!important;
+}
+button.navbar-toggler:hover {
+    transition: 1s;
+    box-shadow: inset 8px 8px 60px 0px #16c0f0!important;
+}
+
+button.btn-close.btn-close-white {
+    box-shadow: none!important;
+    filter: none!important;
+    opacity: 1!important;
+    background: transparent url(/images/xbutton.svg) center/1em auto no-repeat;
+}
+
+
+
 
 
 
