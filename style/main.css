@@ -191,4 +191,18 @@ button.btn-close.btn-close-white {
   transition: 1s;
   box-shadow: inset 8px 8px 80px 0px #16c0f0;
   color: white;
+}
+
+.home-table-cell span {
+  padding-left: 1px;
+}
+
+.typewrite {
+  text-decoration: none;
+  color: #16c0f0;
+  list-style: none;
+}
+
+.typewrite:hover {
+  color: #16c0f0;
 }/*# sourceMappingURL=main.css.map */
