@@ -51,7 +51,7 @@ h6 {
 /* Nav Bar */
 .navbar {
   background-color: #2b3d4f;
-  border-bottom: 12px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .container-fluid {
@@ -70,7 +70,7 @@ h6 {
 }
 
 .menu-icon {
-  color: #16c0f0;
+  color: orange;
   display: flex;
   padding: 30px 0;
   justify-content: center;
@@ -118,4 +118,77 @@ button.btn-close.btn-close-white {
   filter: none !important;
   opacity: 1 !important;
   background: transparent url(/images/xbutton.svg) center/1em auto no-repeat;
+}
+
+/* Home */
+.container-home {
+  background: url(/images/home.jpg) center center no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container-home .overlay {
+  background-color: rgba(39, 37, 37, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.home-text-table {
+  display: table;
+  width: 100%;
+  text-align: center;
+}
+
+.home-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 97vh;
+  min-height: 100%;
+  color: white;
+}
+
+.home-table-cell h1 {
+  color: #fff;
+  font-size: 75px;
+  margin: 30px 0;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+
+.home-table-cell p {
+  color: #c3c0c0;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.main-btn {
+  display: inline-block;
+  min-width: 145px;
+  background: transparent;
+  color: #16c0f0;
+  border: 1px solid #16c0f0;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  border-radius: 50px;
+  outline: none;
+  overflow: hidden;
+  text-decoration: none;
+  background: #273445;
+  color: #fff;
+  border: 1px solid #273445;
+}
+
+.main-btn:hover {
+  transition: 1s;
+  box-shadow: inset 8px 8px 80px 0px #16c0f0;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
