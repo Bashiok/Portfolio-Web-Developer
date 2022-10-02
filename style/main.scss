@@ -85,6 +85,12 @@ h6 {
     font-size: 17px!important;
 }
 
+.navbar .navbar-nav > li a.active {
+	color: #16c0f0;
+    font-weight: 600;
+    background-color: #273445;
+}
+
 .nav-link:hover {
     background-color: #273445;
 }
@@ -221,13 +227,13 @@ button.btn-close.btn-close-white {
 
 /* O Mnie */
 
-.aboute {
+.about {
     background-color: #2b3d4f;
     padding-top: 10px;
     padding-bottom: 40px;
 }
 
-.container-aboute {
+.container-about {
     width: 1170px;
     padding-right: 15px;
     padding-left: 15px;
@@ -235,7 +241,7 @@ button.btn-close.btn-close-white {
     margin-left: auto;
 }
 
-.aboute-image {
+.about-image {
     padding: 7px;
     background: linear-gradient(-50deg, rgba(170, 170, 170, .1) 45%, transparent 25%);
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);
@@ -254,7 +260,7 @@ button.btn-close.btn-close-white {
     width: 41.6%;
 }
 
-.aboute-image {
+.about-image {
     margin-top: 30px;
 }
 
@@ -350,3 +356,10 @@ button.btn-close.btn-close-white {
 .personal-info-btn {
     margin-top: 30px;
 }
+
+.non-text, .non-text:hover {
+    text-decoration: none;
+    color: #c7c5c7;
+}
+
+
