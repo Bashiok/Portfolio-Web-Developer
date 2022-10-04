@@ -213,20 +213,20 @@ button.btn-close.btn-close-white {
   padding-left: 1px;
 }
 
-@media (max-width: 575px) {
-  .home-table-cell h1 {
-    font-size: 25px;
-  }
-}
 @media (max-width: 767px) {
   .home-table-cell h1 {
     font-size: 35px;
   }
 }
+@media (max-width: 575px) {
+  .home-table-cell h1 {
+    font-size: 25px;
+  }
+}
 /* O Mnie */
 .about {
   background-color: #2b3d4f;
-  padding-top: 10px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -356,4 +356,43 @@ button.btn-close.btn-close-white {
 .non-text, .non-text:hover {
   text-decoration: none;
   color: #c7c5c7;
+}
+
+@media (max-width: 1300px) {
+  .container-about {
+    width: 1170px;
+  }
+}
+@media (max-width: 1200px) {
+  .container-about {
+    width: 1070px;
+  }
+  .personal-info-btn {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  .container-about {
+    width: 970px;
+  }
+  .title h2 {
+    font-size: 2.5vh;
+  }
+  .title h3 {
+    font-size: 2vh;
+  }
+  .title h5 {
+    font-size: 1.5vh;
+  }
+  .title p {
+    font-size: 1.5vh;
+  }
+  .personal-info {
+    font-size: 1.5vh;
+  }
+}
+@media (max-width: 990px) {
+  .container-about {
+    width: 700px;
+  }
 }/*# sourceMappingURL=main.css.map */
