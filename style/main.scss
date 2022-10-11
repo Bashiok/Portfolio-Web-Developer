@@ -399,6 +399,75 @@ button.btn-close.btn-close-white {
 
 @media (max-width: 990px) {
     .container-about {
-        width: 700px;
+        width: 500px;
+    }
+    .personal-info {
+        position: relative;
     }
 }
+
+@media (max-width: 730px) {
+    .container-about {
+        width: 420px;
+    }
+    .personal-info {
+        position: relative;
+    }
+}
+
+@media (max-width: 530px) {
+    .container-about {
+        max-width: 80%;
+        padding: 0;
+    }
+    .personal-info {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+
+    }
+    .personal-info-row {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+    .info-block p {
+        display: flex;
+        width: 200px;
+        flex-wrap: wrap;
+    }
+}
+
+.experience {
+    background-color: #263446;
+    display: flex;
+
+}
+
+.conteiner-experience {
+    color: white;
+    width: 1170px;
+    display: flex;
+    margin: auto;  
+}
+
+.experience-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.experience-blocks {
+    border: yellow 1px solid;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-basis: 15%;
+    display: flex;
+}
+
