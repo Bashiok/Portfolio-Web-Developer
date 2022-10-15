@@ -535,6 +535,10 @@ button.btn-close.btn-close-white {
   color: white;
 }
 
+.cv-title {
+  margin-top: 30px;
+}
+
 .cv-line {
   width: 170px;
 }
@@ -551,15 +555,16 @@ button.btn-close.btn-close-white {
   border: 1px solid #16c0f0;
   position: relative;
   opacity: 0.9;
-  max-width: 90%;
+  max-width: 49%;
   height: auto;
   margin: auto;
   margin-top: 50px;
   display: block;
+  transition: 0.5s ease-in-out;
 }
 
 .img-fluid {
-  max-width: 80% !important;
+  max-width: 49% !important;
 }
 
 .cv-image-wrapper {
@@ -568,4 +573,8 @@ button.btn-close.btn-close-white {
 
 .cv-button {
   margin-top: 30px;
+}
+
+.cv-image:hover {
+  filter: brightness(70%);
 }/*# sourceMappingURL=main.css.map */
