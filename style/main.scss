@@ -610,35 +610,23 @@ button.btn-close.btn-close-white {
 
 .portfolio-title {
     padding: 40px 0;
+    margin-top: 70px;
 } 
 
 .portfolio-line {
     width: 230px;
 }
 
-// .portfolio-content {
-//     align-content: center;
-//     display: flex;
-//     width: 100%;
-//     flex-wrap: wrap;
-// }
 
-
-.container-portfolio {
-    
-}
 
 .portfolio-block {
-    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .item-portfolio {
-    border: 1px solid yellow;
-    flex-basis: 33%;
+    flex-basis: 30%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -650,15 +638,18 @@ button.btn-close.btn-close-white {
     transform-style: preserve-3d;
     transition: all 0.4s ease-out 0ms;
     pointer-events: auto;
+    max-height: 300px;
+    margin-bottom: 50px;
+    border: 1px solid rgba(43, 61, 79, .9);
 }
 
-.item-portfolio:hover .overlay {
+.item-portfolio:hover .portfolio-overlay {
     visibility: visible;
     transform: scale(1);
     transition-duration: .6s;
 }
 
-.overlay {
+.portfolio-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -671,11 +662,41 @@ button.btn-close.btn-close-white {
     transform: scale(0);
     display: flex;
     justify-content: center;
-}
-
-.item-portfolio .overlay {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
+
+.portfolio-overlay h4 {
+    padding: 20px 0;
+}
+
+.portfolio-overlay .item-category {
+    margin-bottom: 30px;
+}
+
+.portfolio-overlay a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.portfolio-overlay a:hover {
+    color: #16c0f0;
+}
+
+.portfolio-overlay a .fa {
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid #273445;
+    border-radius: 50%;
+    background-color: #273445;
+}
+
+.portfolio-overlay a .fa:hover {
+    background-color: #16c0f0;
+    transition: 1s;
+    box-shadow: inset 8px 8px 80px 0px #16c0f0;
+    color: white;
+}
+
+
