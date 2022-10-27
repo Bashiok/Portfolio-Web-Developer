@@ -609,8 +609,7 @@ button.btn-close.btn-close-white {
 }
 
 .portfolio-title {
-    padding: 40px 0;
-    margin-top: 70px;
+    padding: 100px 0px 40px 0px;
 } 
 
 .portfolio-line {
@@ -700,3 +699,372 @@ button.btn-close.btn-close-white {
 }
 
 
+
+
+.contact {
+    background-color: #2b3d4f;
+}
+
+.container-contact {
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.contact-title {
+    padding: 100px 0 40px 0;
+}
+
+.contact-line {
+    width: 140px;
+}
+
+.contact-wraper {
+    display: flex;
+    
+}
+
+.contact-wraper .contact-info {
+    width: 33%;
+}
+
+.contact-wraper .contact-form {
+    width: 67%;
+}
+
+.contact-info {
+    background: #263446;
+    border: 3px solid #374757;
+    box-shadow: 0 4px 5px rgb(37 50 66 / 70%);
+    padding: 25px 20px;
+}
+
+.contact-box {
+    padding: 25px 0;
+    position: relative;
+    border-bottom: 1px solid #263340;
+    border-top: 1px solid #374757;
+}
+
+.contact-box h2 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    letter-spacing: .5px;
+    text-transform: capitalize;
+    color: #16c0f0;
+    text-align: center;
+}
+
+.contact-box p {
+    font-size: 13px;
+}
+
+.contact-box i {
+    position: absolute;
+    top: 8px;
+    left: 11px;
+    font-size: 60px;
+    transform: rotate(-18deg);
+    opacity: .12;
+    color: #5e7184;
+}
+
+
+
+.contact-location {
+    border-top: none;
+}
+
+.contact-location p {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-form {
+    background: #263446;
+    border: 3px solid #374757;
+    box-shadow: 0 4px 5px rgb(37 50 66 / 70%);
+    padding: 25px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-contact-form {
+    background-image: url(/images/baner-2.png);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 0px 22%;
+    padding-bottom: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .content-contact-form h2 {
+    margin: 0;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 100;
+  }
+  
+  .col input {
+    background: transparent;
+    border-radius: 10px;
+    border-color: #FFF;
+    padding: 1%;
+    width: 40%;
+    margin-bottom: 2%;
+    border-style: solid;
+    color: #FFF;
+  }
+  
+  .text-area {
+    background: transparent;
+    border-radius: 10px;
+    border-color: #FFF;
+    padding: 1%;
+    width: 70%;
+    margin-bottom: 2%;
+    border-style: solid;
+  }
+  
+  .text-area textarea {
+    background: transparent;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    color: #FFF;
+    width: 100% !important;
+    outline: none;
+    resize: none;
+  }
+  
+  .text-area textarea::-webkit-resizer {
+    display: none;
+  }
+  
+  .b-contain input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .b-contain {
+    width: 65%;
+  }
+  
+  .b-contain span {
+    line-height: 1.5;
+    font-size: 0.8rem;
+    font-family: inherit;
+    color: grey;
+  }
+  
+  .b-contain {
+    display: table;
+    position: relative;
+    padding-left: 3.2rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  .b-contain input[type=checkbox] ~ .b-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    width: 2.5rem;
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 2.009rem;
+  }
+  
+  .b-contain input[type=checkbox] ~ .b-input::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 1.2rem;
+    top: 0.5rem;
+    width: 0.25rem;
+    height: 0.6rem;
+    border: solid #2F2F2F;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .b-contain input:checked ~ .b-input::after {
+    display: block;
+  }
+  
+  .b-contain input:checked:focus ~ .b-input, .b-contain:hover input:not([disabled]):checked ~ .b-input {
+    background: #FFED00;
+    border-color: #FFED00;
+  }
+  
+  .b-contain .b-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0.1rem;
+    top: -0.1rem;
+    width: 4rem;
+    height: 4rem;
+    margin-left: -0.85rem;
+    margin-top: -0.85rem;
+    background: #FFED00;
+    border-radius: 2rem;
+    opacity: 0.6;
+    z-index: 99999;
+    transform: scale(0);
+  }
+  
+  @-webkit-keyframes b-ripple-duplicate {
+    0% {
+      transform: scale(0);
+    }
+    30% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes b-ripple-duplicate {
+    0% {
+      transform: scale(0);
+    }
+    30% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+  }
+  .b-contain input + .b-input::before {
+    -webkit-animation: b-ripple 250ms ease-out;
+            animation: b-ripple 250ms ease-out;
+  }
+  
+  .b-contain input:checked + .b-input::before {
+    -webkit-animation-name: b-ripple-duplicate;
+            animation-name: b-ripple-duplicate;
+  }
+  
+  .b-contain input:focus + .b-input::before {
+    visibility: visible;
+  }
+  
+  .b-contain input:checked ~ .b-input {
+    background: #FFED00;
+    border-color: #FFED00;
+  }
+  
+  .send-button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: 1px solid;
+    border-radius: 6px;
+    text-decoration: none;
+    padding: 5px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #FFED00;
+    color: #2F2F2F;
+    margin-top: 2.5%;
+    margin-bottom: 6%;
+  }
+  
+  .send-button:hover {
+    color: #FFED00;
+    background-color: #2F2F2F;
+  }
+  
+  @media (max-width: 768px) {
+    .content-contact-form {
+      padding: 0 20%;
+    }
+    .content-contact-form h2 {
+      margin: 0;
+      padding: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-size: 1.8rem;
+    }
+    .content-contact-form form {
+      width: 100%;
+    }
+    .col input {
+      width: 60%;
+    }
+    .text-area {
+      width: 95%;
+    }
+    .b-contain {
+      width: 75%;
+    }
+    .b-contain span {
+      line-height: 1.5;
+      font-size: 0.5rem;
+    }
+    .send-button {
+      margin-top: 4%;
+      margin-bottom: 10%;
+      margin-left: 19%;
+    }
+  }
