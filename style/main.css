@@ -9,6 +9,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a,
 a:hover,
 a:focus,
@@ -527,6 +531,9 @@ button.btn-close.btn-close-white {
   .experience-blocks {
     flex-basis: 100%;
   }
+  .experience-title h2 {
+    margin-top: 100px;
+  }
 }
 .cv {
   background-color: #2b3d4f;
@@ -555,16 +562,12 @@ button.btn-close.btn-close-white {
   border: 1px solid #16c0f0;
   position: relative;
   opacity: 0.9;
-  max-width: 49%;
+  width: 40%;
   height: auto;
   margin: auto;
   margin-top: 50px;
   display: block;
   transition: 0.5s ease-in-out;
-}
-
-.img-fluid {
-  max-width: 49% !important;
 }
 
 .cv-image-wrapper {
@@ -579,18 +582,31 @@ button.btn-close.btn-close-white {
   filter: brightness(70%);
 }
 
+@media (max-width: 530px) {
+  .cv-title {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .cv-line {
+    margin: auto;
+    width: 140px;
+  }
+  .cv-image {
+    width: 86%;
+  }
+}
 .portfolio {
   background-color: #263446;
 }
 
 .container-portfolio {
   color: white;
-  width: 1170px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .portfolio-title {
-  padding: 100px 0px 40px 0px;
+  padding: 100px 0px 40px 40px;
 }
 
 .portfolio-line {
@@ -600,23 +616,14 @@ button.btn-close.btn-close-white {
 .portfolio-block {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.item-portfolio {
-  flex-basis: 30%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.portfolio-block .item-portfolio {
   overflow: hidden;
   opacity: 0.8;
   transform: scale(1) translate3d(0px, 0px, 0px);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  perspective: 1000px;
-  transform-style: preserve-3d;
   transition: all 0.4s ease-out 0ms;
-  pointer-events: auto;
   max-height: 300px;
   margin-bottom: 50px;
   border: 1px solid rgba(43, 61, 79, 0.9);
@@ -640,6 +647,7 @@ button.btn-close.btn-close-white {
   background-color: rgba(43, 61, 79, 0.9);
   transform: scale(0);
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -683,7 +691,7 @@ button.btn-close.btn-close-white {
 }
 
 .container-contact {
-  width: 1170px;
+  max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -692,7 +700,7 @@ button.btn-close.btn-close-white {
 }
 
 .contact-title {
-  padding: 100px 0 40px 0;
+  padding: 100px 0 40px 40px;
 }
 
 .contact-line {
@@ -702,14 +710,15 @@ button.btn-close.btn-close-white {
 .contact-wraper {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .contact-wraper .contact-info {
-  width: 45%;
+  flex: 1;
 }
 
 .contact-wraper .contact-form {
-  width: 100%;
+  flex: 2 1 450px;
 }
 
 .contact-info {
@@ -905,6 +914,7 @@ button.btn-close.btn-close-white {
   padding-left: 3.2rem;
   cursor: pointer;
   margin-bottom: 0.5rem;
+  width: 90%;
 }
 
 .b-contain input[type=checkbox] ~ .b-input {
@@ -1034,36 +1044,11 @@ button.btn-close.btn-close-white {
   color: white;
 }
 
-@media (max-width: 768px) {
-  .content-contact-form {
-    padding: 0 20%;
-  }
-  .content-contact-form h2 {
-    margin: 0;
-    padding: 0;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-size: 1.8rem;
-  }
-  .content-contact-form form {
-    width: 100%;
-  }
-  .col input {
-    width: 60%;
-  }
-  .text-area {
-    width: 95%;
-  }
-  .b-contain {
-    width: 75%;
-  }
-  .b-contain span {
-    line-height: 1.5;
-    font-size: 0.5rem;
-  }
-  .send-button {
-    margin-top: 4%;
-    margin-bottom: 10%;
-    margin-left: 19%;
-  }
+.footer {
+  max-width: 1170px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Height of the footer */
+  background: #6cf;
 }/*# sourceMappingURL=main.css.map */
