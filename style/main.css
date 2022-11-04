@@ -52,7 +52,7 @@ h6 {
   font-weight: 400;
 }
 
-/* Nav Bar */
+/* Nav Bar Start */
 .navbar {
   background-color: #2b3d4f;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -73,11 +73,16 @@ h6 {
   margin: 0 auto;
 }
 
+.navbar-brand span {
+  color: #16c0f0;
+}
+
 .menu-icon {
-  color: orange;
+  color: #16c0f0;
   display: flex;
   padding: 30px 0;
   justify-content: center;
+  opacity: 0.6;
 }
 
 .nav-link {
@@ -227,7 +232,7 @@ button.btn-close.btn-close-white {
     font-size: 25px;
   }
 }
-/* O Mnie */
+/* About Start */
 .about {
   background-color: #2b3d4f;
   padding-top: 80px;
@@ -426,6 +431,7 @@ button.btn-close.btn-close-white {
     flex-wrap: wrap;
   }
 }
+/* Experience Start */
 .experience {
   background-color: #263446;
   display: flex;
@@ -507,7 +513,7 @@ button.btn-close.btn-close-white {
   letter-spacing: 0.7px;
   line-height: 1;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 10vh;
   margin-bottom: 15px;
 }
 
@@ -543,7 +549,7 @@ button.btn-close.btn-close-white {
 }
 
 .cv-title {
-  margin-top: 30px;
+  margin-top: 6vh;
 }
 
 .cv-line {
@@ -562,7 +568,7 @@ button.btn-close.btn-close-white {
   border: 1px solid #16c0f0;
   position: relative;
   opacity: 0.9;
-  width: 40%;
+  width: 35%;
   height: auto;
   margin: auto;
   margin-top: 50px;
@@ -595,6 +601,7 @@ button.btn-close.btn-close-white {
     width: 86%;
   }
 }
+/* Portfolio Start */
 .portfolio {
   background-color: #263446;
 }
@@ -626,7 +633,7 @@ button.btn-close.btn-close-white {
   transition: all 0.4s ease-out 0ms;
   max-height: 300px;
   margin-bottom: 50px;
-  border: 1px solid rgba(43, 61, 79, 0.9);
+  border: 2px solid rgba(43, 61, 79, 0.9);
 }
 
 .item-portfolio:hover .portfolio-overlay {
@@ -686,6 +693,7 @@ button.btn-close.btn-close-white {
   color: white;
 }
 
+/* Contact Start */
 .contact {
   background-color: #2b3d4f;
 }
@@ -714,7 +722,7 @@ button.btn-close.btn-close-white {
 }
 
 .contact-wraper .contact-info {
-  flex: 1;
+  flex: 1 1 250px;
 }
 
 .contact-wraper .contact-form {
@@ -807,6 +815,7 @@ button.btn-close.btn-close-white {
   font-weight: 100;
 }
 
+/* Contact Form Start */
 .col input {
   background: #2b3d4f;
   border-color: #2b3d4f;
@@ -1044,11 +1053,26 @@ button.btn-close.btn-close-white {
   color: white;
 }
 
-.footer {
-  max-width: 1170px;
+/* Footer Start */
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px; /* Height of the footer */
-  background: #6cf;
+  height: 60px;
+  border-top: 1px solid #374757;
+  border-bottom: 1px solid #263340;
+}
+
+footer span {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vh;
+  color: #c7c5c7;
+}
+
+@media (max-width: 720px) {
+  footer {
+    margin-top: 5vh;
+    position: relative;
+  }
 }/*# sourceMappingURL=main.css.map */

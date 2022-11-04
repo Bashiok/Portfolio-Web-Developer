@@ -10,7 +10,7 @@
     <!-- ========== Title ========== -->
     <title>Portfolio - Łukasz Augustyn</title>
     <!-- ========== Icon ========== -->
-    <link rel="icon" href="#">
+    <link rel="icon" href="/images/portfolio-icon.png">
     <!-- ========== Fonts ========== -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -37,14 +37,14 @@
           $('#pagepiling').pagepiling({
             menu: '#menu',
             normalScrollElements: null,
-            anchors: ['home', 'about', 'experience', 'cv', 'portfolio'],
+            anchors: ['home', 'about', 'experience', 'cv', 'portfolio', 'contact'],
             sectionsColor: ['#263446', '#2b3d4f', '#263446', '#2b3d4f', '#263446'],
             keyboardScrolling: false,
             navigation: {
                   'textColor': '#16c0f0',
                   'bulletsColor': '#16c0f0',
                   'position': 'right',
-                  'tooltips': ['Strona Domowa', 'O Mnie', 'Umiejętności', 'CV', 'Portfolio']
+                  'tooltips': ['Strona Domowa', 'O Mnie', 'Umiejętności', 'CV', 'Projekty', 'Kontakt']
               }
         });
         });
@@ -55,7 +55,7 @@
     <!-- ========== Nab Bar Start ========== -->
     <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#home">Portfolio</a>
+          <a class="navbar-brand" href="#home"><span>W</span>eb <span>D</span>eveloper <span>P</span>ortfolio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,7 +64,7 @@
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="menu-icon">
-              <i class="fa-solid fa-code fa-6x"></i>
+              <i class="fa-solid fa-layer-group fa-5x"></i>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="menu">
@@ -73,8 +73,8 @@
                   <a data-menuanchor="about" class="nav-link " aria-current="page" href="#about"><i class="fa-solid fa-user menu-small-icon"></i>O MNIE</a>
                   <a data-menuanchor="experience" class="nav-link " aria-current="page" href="#experience"><i class="fa-solid fa-flask menu-small-icon"></i>UMIEJĘTNOŚCI</a>
                   <a data-menuanchor="cv" class="nav-link " aria-current="page" href="#cv"><i class="fa-solid fa-graduation-cap menu-small-icon"></i>MOJE CV</a>
-                  <a data-menuanchor="portfolio" class="nav-link " aria-current="page" href="#portfolio"><i class="fa-solid fa-window-restore menu-small-icon"></i>PRTFOLIO</a>
-                  <a class="nav-link " aria-current="page" href="#"><i class="fa-regular fa-address-card menu-small-icon"></i>KONTAKT</a>
+                  <a data-menuanchor="portfolio" class="nav-link " aria-current="page" href="#portfolio"><i class="fa-solid fa-window-restore menu-small-icon"></i>PROJEKTY</a>
+                  <a data-manuanchor="contact" class="nav-link " aria-current="page" href="#contact"><i class="fa-regular fa-address-card menu-small-icon"></i>KONTAKT</a>
                 </li>
               </ul>
             </div>
@@ -207,7 +207,7 @@
             <div class="line cv-line"></div>
           </div>
           <div class="item cv-image-wrapper">
-            <a href="images/Łukasz-Augustyn-PL.jpg" class="fancybox" data-fancybox="gallery1">
+            <a href="images/Łukasz-Augustyn-PL.jpg" class="fancybox" data-fancybox="gallery2">
               <img class="cv-image img-fluid" src="images/Łukasz-Augustyn-PL.jpg"></a>
             <a href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn cv-button">ŚCIĄGNIJ CV</a>
           </div>
@@ -218,11 +218,11 @@
       <section class="portfolio section pp-scrollable" id="section5">
         <div class="container-portfolio">
           <div class="portfolio-title">
-          <h2>Moje Portfolio</h2>
+          <h2>Moje Projekty</h2>
           <div class="line portfolio-line"></div>
           </div>
               <div class="portfolio-block">
-                <div class="item-portfolio">
+                <div class="item-portfolio module-border-wrap">
                 <img class="thumbnails-img" src="/images/osierodek-thumbnails.png">
                   <div class="portfolio-overlay">
                     <h4 class="item-title">Osierodek Przy Wydmach</h4>
@@ -230,7 +230,7 @@
                       <span>Osierodek wypoczynkowy</span>
                     </div>
                     <div class="item-icons">
-                        <a class="icon-img" href="/images/osierodek.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                        <a class="icon-img" href="/images/osierodek.jpg" class="fancybox" data-fancybox="gallery1" title="Powiększ">
                         <i class="fa fa-search-plus"></i>
                         </a>
                         <a href="https://osrodekprzywydmach.pl/" target="_blank">
@@ -298,7 +298,7 @@
                             <span>Sprzedaż okien</span>
                           </div>
                           <div class="item-icons">
-                            <a class="icon-img" href="/images/ms-kaszuby.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                            <a class="icon-img" href="/images/ms-kaszuby.jpg" class="fancybox" data-fancybox="gallery1" title="Powiększ">
                             <i class="fa fa-search-plus"></i>
                             </a>
                             <a href="http://oknamskaszuby.pl/" target="_blank">
@@ -389,16 +389,13 @@
               </div>
             </div>
           </div>
-          <footer>
-            <div class="footer">
-              <span class="footer-content">FOOTER 2022</span>
-            </div>
-          </footer>
         </div>
-
-          
+        <footer>
+          <div>
+            <span>Portfolio by Łukasz Augustyn 2022</span>
+          </div>
+        </footer>
       </section>
-
 </div>
     <!-- ========== Page Piling End ========== -->
 </body>
