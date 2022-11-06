@@ -259,6 +259,9 @@ select:focus > option:checked {
   .home-table-cell h1 {
     font-size: 35px;
   }
+  .navbar-brand {
+    font-size: 17px !important;
+  }
 }
 @media (max-width: 575px) {
   .home-table-cell h1 {
