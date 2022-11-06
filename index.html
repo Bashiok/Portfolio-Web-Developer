@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,18 +44,25 @@
                   'textColor': '#16c0f0',
                   'bulletsColor': '#16c0f0',
                   'position': 'right',
-                  'tooltips': ['Strona Domowa', 'O Mnie', 'Umiejętności', 'CV', 'Projekty', 'Kontakt']
+                  'tooltips': ['Home', 'About', 'Skills', 'CV', 'Projects', 'Contact']
               }
         });
         });
       </script> 
 </head>
-
 <body>
     <!-- ========== Nab Bar Start ========== -->
     <nav class="navbar navbar-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#home"><span>W</span>eb <span>D</span>eveloper <span>P</span>ortfolio</a>
+          <div class="language-wraper">
+            <form>
+              <select class="language-form" id="lang-switch">
+                  <option value="pl" selected>Polski</option>
+                  <option value="en">English</option>
+              </select>
+            </form>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -68,13 +75,21 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" id="menu">
-                <li class="nav-item">
+                <li class="nav-item" lang="pl">
                   <a data-menuanchor="home" class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house-chimney menu-small-icon"></i>STRONA DOMOWA</a>
                   <a data-menuanchor="about" class="nav-link " aria-current="page" href="#about"><i class="fa-solid fa-user menu-small-icon"></i>O MNIE</a>
                   <a data-menuanchor="experience" class="nav-link " aria-current="page" href="#experience"><i class="fa-solid fa-flask menu-small-icon"></i>UMIEJĘTNOŚCI</a>
                   <a data-menuanchor="cv" class="nav-link " aria-current="page" href="#cv"><i class="fa-solid fa-graduation-cap menu-small-icon"></i>MOJE CV</a>
                   <a data-menuanchor="portfolio" class="nav-link " aria-current="page" href="#portfolio"><i class="fa-solid fa-window-restore menu-small-icon"></i>PROJEKTY</a>
                   <a data-manuanchor="contact" class="nav-link " aria-current="page" href="#contact"><i class="fa-regular fa-address-card menu-small-icon"></i>KONTAKT</a>
+                </li>
+                <li class="nav-item" lang="en">
+                  <a data-menuanchor="home" class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house-chimney menu-small-icon"></i>HOME</a>
+                  <a data-menuanchor="about" class="nav-link " aria-current="page" href="#about"><i class="fa-solid fa-user menu-small-icon"></i>ABOUT</a>
+                  <a data-menuanchor="experience" class="nav-link " aria-current="page" href="#experience"><i class="fa-solid fa-flask menu-small-icon"></i>SKILLS</a>
+                  <a data-menuanchor="cv" class="nav-link " aria-current="page" href="#cv"><i class="fa-solid fa-graduation-cap menu-small-icon"></i>MY CV</a>
+                  <a data-menuanchor="portfolio" class="nav-link " aria-current="page" href="#portfolio"><i class="fa-solid fa-window-restore menu-small-icon"></i>PROJECTS</a>
+                  <a data-manuanchor="contact" class="nav-link " aria-current="page" href="#contact"><i class="fa-regular fa-address-card menu-small-icon"></i>CONTACT</a>
                 </li>
               </ul>
             </div>
@@ -92,12 +107,18 @@
               <div class="home-text-table">
                 <div class="home-table-cell">
                   <h1>Łukasz Augustyn</h1>
-                  <p>Jestem
+                  <p lang="pl">Jestem
                     <span>
-                      <a class="typewrite" data-period="2000" data-type='[ "Kreatywny", "Pasjonatem", "Dokładny", "Ambitny", "DEVELOPEREM" ]'></a>
+                      <a class="typewrite" data-period="2000" data-type='[ "Kreatywny", "Pasjonatem", "Dokładny", "Ambitny", "DEVELOPEREM"]'></a>
+                    </span>
+                    </p>
+                    <p lang="en">I'm 
+                    <span>
+                      <a class="typewrite" data-period="2000" data-type='[ "Creative", "Passionate", "Accurate", "Ambitious", "DEVELOPER"]'></a>
                     </span>
                   </p>
-                  <a href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn">ŚCIĄGNIJ CV</a>
+                  <a lang="pl" href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn">ŚCIĄGNIJ CV</a>
+                  <a lang="en" href="/files/Łukasz-Augustyn-EN.pdf" class="main-btn">DOWNLOAD CV</a>
                 </div>
               </div>
             </div>
@@ -116,40 +137,58 @@
             </div>
             <div class="col-lg-7">
               <div class="about-me">
-                <div class="title">
+                <div class="title" lang="pl">
                   <h2>O Mnie</h2>
                   <div class="line"></div>
-                  <h3>Jestem Łukasz Augustyn</h3>
-                  <h5>Jestem Junior Web Deweloperem</h5>
+                  <h3>Nazywam się Łukasz Augustyn</h3>
+                  <h5>Junior Web Deweloper</h5>
                   <p>
                     Jestem freelancerem mieszkającym w Gdańsku w Polsce. Interesuję się sportem, wycieczkami górskimi oraz nowinkami technologicznymi. Jestem bardzo zafascynowany i oddany mojemu hobby, które chcę zmienić na stałe zatrudnienie.</p>
                   <p>Mam doświadczenie Juniorskie w Web Developerstwie, potwierdzone moimi ukończonymi projektami.
                     <br>Poszukuję pracy na pełen etat, żeby rozwijać, się w tym, co mnie pasjonuje i daje satysfakcje z wykonanych projektów.
                     <br>Pracy szukam w okolicach Trójmiasta lub w pełni zdalnej.
-                    <br>Chętnych do współpracy, proszę o kontakt na numer telefonu, e-mail lub formularz zgłoszeniowy.</p>
+                    <br>Chętnych do współpracy, proszę o kontakt na numer telefonu, e-mail lub formularz zgłoszeniowy w zakładce kontakt.</p>
+                </div>
+                <div class="title" lang="en">
+                  <h2>About</h2>
+                  <div class="line"></div>
+                  <h3>My name is Łukasz Augustyn</h3>
+                  <h5>Junior Web Deweloper</h5>
+                  <p>
+                    I am a freelancer living in Gdańsk, Poland. I am interested in sport, mountain trips and technological innovations. I am very fascinated and devoted to my hobby, which I want to change to permanent employment.</p>
+                  <p>I have Junior experience in Web Developer, confirmed by my completed projects.
+                    <br>I am looking for a full-time job to develop myself in what fascinates me and gives me satisfaction from completed projects.
+                    <br>I am looking for a job in the vicinity of the Tri-City or fully remote.
+                    <br>If you are willing to cooperate, please contact me by phone, e-mail or the application form in the contact tab.</p>
                 </div>
                 <div class="personal-info">
                   <div class="personal-info-row">
                     <div class="col-xs-6 info-block">
-                      <p>Imię: <span>Łukasz Augustyn</span></p>
+                      <p lang="pl">Imię: <span>Łukasz Augustyn</span></p>
+                      <p lang="en">Name <span>Łukasz Augustyn</span></p>
                     </div>
                     <div class="col-xs-6 info-block">
-                      <p>Website: <span><a class="non-text" href="http://laugustyn.lapy.pl">laugustyn.lapy.pl</a></span></p>
+                      <p lang="pl">Strona: <span><a class="non-text" href="http://laugustyn.lapy.pl">laugustyn.lapy.pl</a></span></p>
+                      <p lang="en">Website: <span><a class="non-text" href="http://laugustyn.lapy.pl">laugustyn.lapy.pl</a></span></p>
                     </div>
                     <div class="col-xs-6 info-block">
-                      <p>Telefon: <span><a class="non-text" href="tel:513249535">513 249 535</a></span></p>
+                      <p lang="pl">Telefon: <span><a class="non-text" href="tel:513249535">513 249 535</a></span></p>
+                      <p lang="en">Phone: <span><a class="non-text" href="tel:513249535">513 249 535</a></span></p>
                     </div>
                     <div class="col-xs-6 info-block">
-                      <p>Wiek: <span>32</span></p>
+                      <p lang="pl">Wiek: <span>32</span></p>
+                      <p lang="en">Age: <span>32</span></p>
                     </div>
                     <div class="col-xs-6 info-block">
                       <p>E-mail: <span><a class="non-text" href="mailto:luki.gd@gmail.com">luki.gd@gmail.com</a></span></p>
                     </div>
                     <div class="col-xs-6 info-block">
-                      <p>Adres: <span>Gdańsk / Kowale</span></p>
+                      <p lang="pl">Adres: <span>Gdańsk / Kowale</span></p>
+                      <p lang="en">Adress: <span>Gdańsk / Kowale</span></p>
                     </div>
                   </div>
-                    <a href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn personal-info-btn">ŚCIĄGNIJ CV</a>
+                    <a lang="pl" href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn personal-info-btn">ŚCIĄGNIJ CV</a>
+                    <a lang="en" href="/files/Łukasz-Augustyn-EN.pdf" class="main-btn personal-info-btn">DOWNLOAD CV</a>
                 </div>
               </div>
             </div>
@@ -161,38 +200,52 @@
       <section class="experience section pp-scrollable" id="section3">
         <div class="conteiner-experience">
           <div class="experience-wraper experience-title">
-              <h2>Umiejętności</h2>
-              <div class="experience-line"></div>
+              <h2 lang="pl">Umiejętności</h2>
+              <h2 lang="en">Skills</h2>
+              <div lang="pl" class="experience-line"></div>
+              <div lang="en" class="experience-line-en"></div>
             <div class="experience-block-wraper">
               <div class="experience-blocks">
                 <div class="experience-icon"><i class="fa-regular fa-pen-to-square"></i></div>
-                <h4>Kreatywny Design</h4>
-                <p>Przygoyowuje nowoczeny i oryginalny wygląd stron i sklepów internetowych.</p>
+                <h4 lang="pl">Kreatywny Design</h4>
+                <p lang="pl">Przygotowuje nowoczesny i oryginalny wygląd stron i sklepów internetowych.</p>
+                <h4 lang="en">Creative Design</h4>
+                <p lang="en">Prepares a modern and original look for websites and online stores.</p>
               </div>
               <div class="experience-blocks">
                 <div class="experience-icon"><i class="fa-regular fa-file-code"></i></div>
-                <h4>Czysty Kod</h4>
-                <p>Długość, czytelność kodu oraz przejżystość kodu jest dla mnie prorytetem.</p>
+                <h4 lang="pl">Czysty Kod</h4>
+                <p lang="pl">Długość, czytelność kodu oraz przejrzystość kodu jest dla mnie priorytetem.</p>
+                <h4 lang="en">Clean Code</h4>
+                <p lang="en">The length, readability of the code and code clarity is my priority.</p>
               </div>
               <div class="experience-blocks">
                 <div class="experience-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-                <h4>Responsywny Strony</h4>
-                <p>Dostosowuje wszystkie strony pod wersje mobilne.</p>
+                <h4 lang="pl">Responsywne Strony</h4>
+                <p lang="pl">Dostosowuje wszystkie strony pod wersje mobilne.</p>
+                <h4 lang="en">Responsive Pages</h4>
+                <p lang="en">It adapts all pages to mobile versions.</p>
               </div>
               <div class="experience-blocks">
                 <div class="experience-icon"><i class="fa-solid fa-spinner"></i></div>
-                <h4>Szybkość Wczytywania</h4>
-                <p>Dostosowuje wszystkie pliki strony tak aby czas ładowania był jak najkrótszy.</p>
+                <h4 lang="pl">Szybkość Wczytywania</h4>
+                <p lang="pl">Dostosowuje wszystkie pliki strony tak aby czas ładowania był jak najkrótszy.</p>
+                <h4 lang="en">Loading Speed</h4>
+                <p lang="en">It adjusts all page files so that the loading time is as short as possible.</p>
               </div>
               <div class="experience-blocks">
                 <div class="experience-icon"><i class="fa-solid fa-handshake-angle"></i></div>
-                <h4>Wsparcie Techniczne</h4>
-                <p>Oferuje pomoc przy aktualizacjach oraz zmianach zbudowanych stron.</p>
+                <h4 lang="pl">Wsparcie Techniczne</h4>
+                <p lang="pl">Oferuje pomoc przy aktualizacjach oraz zmianach zbudowanych stron.</p>
+                <h4 lang="en">Technical Assistance</h4>
+                <p lang="en">Offers help with updates and changes to built pages.</p>
               </div>
               <div class="experience-blocks">
                 <div class="experience-icon"><i class="fa-solid fa-registered"></i></div>
-                <h4>Branding</h4>
-                <p>Pomagam zaprojektować wygląd i działanie strony aby dopasować ją pod strategie marki.</p>
+                <h4 lang="pl">Branding</h4>
+                <p lang="pl">Pomagam zaprojektować wygląd i działanie strony aby dopasować ją pod strategie marki.</p>
+                <h4 lang="en">Branding</h4>
+                <p lang="en">I help to design the appearance and operation of the website to match it with the brand's strategies.</p>
               </div>
             </div>
           </div>
@@ -203,13 +256,18 @@
       <section class="cv section pp-scrollable" id="section4">
         <div class="cv-container img-fluid">
           <div class="cv-title">
-            <h1>Moje CV</h1>
-            <div class="line cv-line"></div>
+            <h1 lang="pl">Moje CV</h1>
+            <h1 lang="en">My CV</h1>
+            <div lang="pl" class="line cv-line"></div>
+            <div lang="en" class="line cv-line-en"></div>
           </div>
           <div class="item cv-image-wrapper">
-            <a href="images/Łukasz-Augustyn-PL.jpg" class="fancybox" data-fancybox="gallery2">
+            <a lang="pl" href="images/Łukasz-Augustyn-PL.jpg" class="fancybox" data-fancybox="gallery2">
               <img class="cv-image img-fluid" src="images/Łukasz-Augustyn-PL.jpg"></a>
-            <a href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn cv-button">ŚCIĄGNIJ CV</a>
+            <a lang="en" href="images/Łukasz-Augustyn-EN.jpg" class="fancybox" data-fancybox="gallery3">
+              <img class="cv-image img-fluid" src="images/Łukasz-Augustyn-EN.jpg"></a>
+            <a lang="pl" href="/files/Łukasz-Augustyn-PL.pdf" class="main-btn cv-button">ŚCIĄGNIJ CV</a>
+            <a lang="en" href="/files/Łukasz-Augustyn-EN.pdf" class="main-btn cv-button">DOWNLOAD CV</a>
           </div>
         </div>
       </section>
@@ -218,23 +276,31 @@
       <section class="portfolio section pp-scrollable" id="section5">
         <div class="container-portfolio">
           <div class="portfolio-title">
-          <h2>Moje Projekty</h2>
-          <div class="line portfolio-line"></div>
+          <h2 lang="pl">Moje Projekty</h2>
+          <h2 lang="en">My projects</h2>
+          <div lang="pl" class="line portfolio-line"></div>
+          <div lang="en" class="line portfolio-line-en"></div>
           </div>
               <div class="portfolio-block">
                 <div class="item-portfolio module-border-wrap">
                 <img class="thumbnails-img" src="/images/osierodek-thumbnails.png">
                   <div class="portfolio-overlay">
-                    <h4 class="item-title">Osierodek Przy Wydmach</h4>
+                    <h4 lang="pl" class="item-title">Osierodek Przy Wydmach</h4>
+                    <h4 lang="en" class="item-title">Center next to dune</h4>
                     <div class="item-category">
-                      <span>Osierodek wypoczynkowy</span>
+                      <span lang="pl">Osierodek wypoczynkowy</span>
+                      <span lang="en">Resort</span>
                     </div>
                     <div class="item-icons">
-                        <a class="icon-img" href="/images/osierodek.jpg" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                        <a lang="pl" class="icon-img" href="/images/osierodek.jpg" class="fancybox" data-fancybox="gallery1" title="Powiększ">
                         <i class="fa fa-search-plus"></i>
                         </a>
+                        <a lang="en" class="icon-img" href="/images/osierodek.jpg" class="fancybox" data-fancybox="gallery4" title="Zoom in">
+                          <i class="fa fa-search-plus"></i>
+                          </a>
                         <a href="https://osrodekprzywydmach.pl/" target="_blank">
-                        <i class="fa fa-link" title="Link do projektu"></i>
+                        <i lang="pl" class="fa fa-link" title="Link do projektu"></i>
+                        <i lang="en" class="fa fa-link" title="Link to the project"></i>
                         </a>
                     </div>
                   </div>
@@ -242,16 +308,22 @@
                 <div class="item-portfolio">
                 <img class="thumbnails-img" src="/images/hotel-willowa-thumbnails.png">
                   <div class="portfolio-overlay">
-                    <h4 class="item-title">Hotel Willowa</h4>
+                    <h4 lang="pl" class="item-title">Hotel Willowa</h4>
+                    <h4 lang="en" class="item-title">Hotel Willowa</h4>
                     <div class="item-category">
-                      <span>Hotel i Apartamenty na wynajem</span>
+                      <span lang="pl">Hotel i Apartamenty na wynajem</span>
+                      <span lang="en">Hotel and apartments for rent</span>
                     </div>
                     <div class="item-icons">
-                      <a class="icon-img" href="/images/hotel-willowa.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                      <a lang="pl" class="icon-img" href="/images/hotel-willowa.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                      <i class="fa fa-search-plus"></i>
+                      </a>
+                      <a lang="en" class="icon-img" href="/images/hotel-willowa.png" class="fancybox" data-fancybox="gallery4" title="Zoom in">
                       <i class="fa fa-search-plus"></i>
                       </a>
                       <a href="https://www.noclegiwlublinie.pl/" target="_blank">
-                      <i class="fa fa-link" title="Link do projektu"></i>
+                      <i lang="pl" class="fa fa-link" title="Link do projektu"></i>
+                      <i lang="en" class="fa fa-link" title="Link to the project"></i>
                       </a>
                       </div>
                     </div>
@@ -259,16 +331,22 @@
                   <div class="item-portfolio">
                     <img class="thumbnails-img" src="/images/grawer-julia-thumbnails.png">
                     <div class="portfolio-overlay">
-                      <h4 class="item-title">Sklep internetowy</h4>
+                      <h4 lang="pl" class="item-title">Sklep internetowy</h4>
+                      <h4 lang="en" class="item-title">Online shop</h4>
                       <div class="item-category">
-                        <span>Sprzedaż rzeczy grawerowanych</span>
+                        <span lang="pl">Sprzedaż rzeczy grawerowanych</span>
+                        <span lang="en">Sale of engraved items</span>
                       </div>
                       <div class="item-icons">
-                        <a class="icon-img" href="/images/grawer-julia.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                        <a lang="pl" class="icon-img" href="/images/grawer-julia.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                        <i class="fa fa-search-plus"></i>
+                        </a>
+                        <a lang="en" class="icon-img" href="/images/grawer-julia.png" class="fancybox" data-fancybox="gallery4" title="Zoom in">
                         <i class="fa fa-search-plus"></i>
                         </a>
                         <a href="https://www.grawerjulia.pl/" target="_blank">
-                        <i class="fa fa-link" title="Link do projektu"></i>
+                        <i lang="pl" class="fa fa-link" title="Link do projektu"></i>
+                        <i lang="en" class="fa fa-link" title="Link to the project"></i>
                         </a>
                         </div>
                       </div>
@@ -276,16 +354,22 @@
                     <div class="item-portfolio">
                       <img class="thumbnails-img" src="/images/carbon-king-thumbnails.png">
                       <div class="portfolio-overlay">
-                        <h4 class="item-title">Carbon King</h4>
+                        <h4 lang="pl" class="item-title">Carbon King</h4>
+                        <h4 lang="en" class="item-title">Carbon King</h4>
                         <div class="item-category">
-                          <span>Cięcie i sprzedaż CNC</span>
+                          <span lang="pl">Cięcie i sprzedaż CNC</span>
+                          <span lang="en">CNC cutting and sale</span>
                         </div>
                         <div class="item-icons">
-                          <a class="icon-img" href="/images/carbon-king.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                          <a lang="pl" class="icon-img" href="/images/carbon-king.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                          <i class="fa fa-search-plus"></i>
+                          </a>
+                          <a lang="en" class="icon-img" href="/images/carbon-king.png" class="fancybox" data-fancybox="gallery4" title="Zoom in">
                           <i class="fa fa-search-plus"></i>
                           </a>
                           <a href="http://carbonking.laugustyn.lapy.pl/" target="_blank">
-                          <i class="fa fa-link" title="Link do projektu"></i>
+                          <i lang="pl" class="fa fa-link" title="Link do projektu"></i>
+                          <i lang="en" class="fa fa-link" title="Link to the project"></i>
                           </a>
                           </div>
                         </div>
@@ -293,16 +377,22 @@
                       <div class="item-portfolio">
                         <img class="thumbnails-img" src="/images/ms-kaszuby-thumbnails.png">
                         <div class="portfolio-overlay">
-                          <h4 class="item-title">Okna MS Kaszuby</h4>
+                          <h4 lang="pl" class="item-title">Okna MS Kaszuby</h4>
+                          <h4 lang="en" class="item-title">Windows of MS Kashubia</h4>
                           <div class="item-category">
-                            <span>Sprzedaż okien</span>
+                            <span lang="pl">Sprzedaż okien</span>
+                            <span lang="en">Sale of windows</span>
                           </div>
                           <div class="item-icons">
-                            <a class="icon-img" href="/images/ms-kaszuby.jpg" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                            <a lang="pl" class="icon-img" href="/images/ms-kaszuby.jpg" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                            <i class="fa fa-search-plus"></i>
+                            </a>
+                            <a lang="en" class="icon-img" href="/images/ms-kaszuby.jpg" class="fancybox" data-fancybox="gallery4" title="Zoom in">
                             <i class="fa fa-search-plus"></i>
                             </a>
                             <a href="http://oknamskaszuby.pl/" target="_blank">
-                            <i class="fa fa-link" title="Link do projektu"></i>
+                            <i lang="pl" class="fa fa-link" title="Link do projektu"></i>
+                            <i lang="en" class="fa fa-link" title="Link to the project"></i>
                             </a>
                             </div>
                           </div>
@@ -310,16 +400,22 @@
                         <div class="item-portfolio">
                           <img class="thumbnails-img" src="/images/eko-thumbnails.png">
                           <div class="portfolio-overlay">
-                            <h4 class="item-title">Ekoenergetyka</h4>
+                            <h4 lang="pl" class="item-title">Ekoenergetyka</h4>
+                            <h4 lang="en" class="item-title">Ecoenergy</h4>
                             <div class="item-category">
-                              <span>Pomorska fundacja Ekoenergetyczna</span>
+                              <span lang="pl">Pomorska fundacja Ekoenergetyczna</span>
+                              <span lang="en">Pomeranian Ecoenergy Foundation</span>
                             </div>
                             <div class="item-icons">
-                              <a class="icon-img" href="/images/eko.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                              <a lang="pl" class="icon-img" href="/images/eko.png" class="fancybox" data-fancybox="gallery1" title="Powiększ">
+                              <i class="fa fa-search-plus"></i>
+                              </a>
+                              <a lang="en" class="icon-img" href="/images/eko.png" class="fancybox" data-fancybox="gallery4" title="Zoom in">
                               <i class="fa fa-search-plus"></i>
                               </a>
                               <a href="http://ekoenergia.org/" target="_blank">
-                              <i class="fa fa-link" title="Link do projektu"></i>
+                              <i lang="pl" class="fa fa-link" title="Link do projektu"></i>
+                              <i lang="en" class="fa fa-link" title="Link to the project"></i>
                               </a>
                               </div>
                           </div>
@@ -332,15 +428,19 @@
       <section class="contact section pp-scrollable" id="section6">
         <div class="container-contact">
           <div class="contact-title">
-            <h2>Kontakt</h2>
-            <div class="line contact-line"></div>
+            <h2 lang="pl">Kontakt</h2>
+            <h2 lang="en">Contact</h2>
+            <div lang="pl" class="line contact-line"></div>
+            <div lang="en" class="line contact-line-en"></div>
           </div>
           <div class="contact-wraper">
             <div class="contact-info">
               <div class="contact-box contact-location">
                 <i class="fa-solid fa-location-dot"></i>
-                <h2>Lokalizacja:</h2>
-                <p>Gdańsk / Kowale, Polska</p>
+                <h2 lang="pl">Lokalizacja:</h2>
+                <p lang="pl">Gdańsk / Kowale, Polska</p>
+                <h2 lang="en">Location:</h2>
+                <p lang="en">Gdańsk / Kowale, Polska</p>
               </div>
               <div class="contact-box contact-email">
                 <i class="fa-regular fa-envelope"></i>
@@ -349,7 +449,8 @@
               </div>
               <div class="contact-box contact-phone">
                 <i class="fa-solid fa-phone"></i>
-                <h2>Telefon:</h2>
+                <h2 lang="pl">Telefon:</h2>
+                <h2 lang="en">Phone:</h2>
                 <p><span><a class="non-text" href="tel:513249535">513 249 535</a></span></p>
               </div>
               <div class="contact-box contact-website">
@@ -364,27 +465,32 @@
                       <div class="form-group">
                           <div class="form-row">
                               <div class="col">
-                                  <input type="text" name="Name" class="form-control" placeholder="Name" required>
+                                  <input lang="pl" type="text" name="Name" class="form-control" placeholder="Imię" required>
+                                  <input lang="en" type="text" name="Name" class="form-control" placeholder="Name" required>
                               </div>
                               <div class="col">
                                   <input type="email" name="E-mail" class="form-control" placeholder="E-mail" required>
                               </div>
                               <div class="col">
-                                  <input type="subject" name="Subject" class="form-control " placeholder="Subject" required>
+                                  <input lang="pl" type="subject" name="Subject" class="form-control " placeholder="Temat" required>
+                                  <input lang="en" type="subject" name="Subject" class="form-control " placeholder="Topic" required>
                               </div>
                           </div>
                       </div>
                       <div class="form-group text-area">
-                          <textarea placeholder="Message" class="form-control padding-control" name="Message" rows="4" required></textarea>
+                          <textarea lang="pl" placeholder="Wiadomość" class="form-control padding-control" name="Message" rows="4" required></textarea>
+                          <textarea lang="en" placeholder="Message" class="form-control padding-control" name="Message" rows="4" required></textarea>
                       </div>
                       <div>
                           <label class="b-contain">
-                              <span class="checkbox-text">Wyrażam zgodę na przetwarzanie danych osobowych.</span>
+                              <span lang="pl" class="checkbox-text">Wyrażam zgodę na przetwarzanie danych osobowych.</span>
+                              <span lang="en" class="checkbox-text">I agree to the processing of personal data.</span>
                               <input type="checkbox" required>
                               <div class="b-input"></div>
                           </label>
                       </div>
-                        <button type="submit" class="send-button">Send</button>
+                        <button lang="pl" type="submit" class="send-button">Wyślij</button>
+                        <button lang="en" type="submit" class="send-button">Send</button>
                   </form>
               </div>
             </div>
@@ -398,6 +504,28 @@
       </section>
 </div>
     <!-- ========== Page Piling End ========== -->
+    <!-- ========== Language Switche Script Start ========== -->  
+    <script>
+      $('[lang]').hide(); // hide all lang attributes on start.
+      $('[lang="pl"]').show(); // show just Polish text
+      $('#lang-switch').change(function () { // put onchange event when user select option from select
+          var lang = $(this).val(); // decide which language to display using switch case.
+          switch (lang) {
+              case 'en':
+                  $('[lang]').hide();
+                  $('[lang="en"]').show();
+              break;
+              case 'pl':
+                  $('[lang]').hide();
+                  $('[lang="pl"]').show();
+              break;
+              default:
+                  $('[lang]').hide();
+                  $('[lang="pl"]').show();
+              }
+      });
+      </script>
+    <!-- ========== Language Switche Script End ========== -->
 </body>
 
 </html>
